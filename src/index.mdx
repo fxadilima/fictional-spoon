@@ -1,0 +1,117 @@
+---
+layout: layouts/default.vto
+title: Null Pointer
+---
+
+<img className="w3-image"
+    src="/images/sample.png"
+    alt="Markdown" 
+    title="Example"
+    style="width:100%;"
+/>
+
+# Menulis Novel Menggunakan Markdown
+
+Saat ini kita menulis hampir semua teks di dalam cerita kita dengan hanya mengikuti format yang sudah disetujui oleh _platform_ yang kita gunakan. Namun, dengan menggunakan Markdown, kita bisa menulis cerita kita dengan format yang lebih fleksibel dan mudah dibaca.
+
+Semua file _markdown_ yang kita tulis akan disimpan sebagai file teks biasa, sehingga kita bisa dengan mudah mengeditnya menggunakan editor teks apa pun yang kita sukai. Kita tidak perlu khawatir tentang bagaimana cerita kita akan terlihat di platform tertentu, karena Markdown akan secara otomatis mengatur semuanya untuk kita. Jadi bukan seperti dokumen `Word` atau `Google Docs` yang memiliki format yang rumit dan sulit untuk diubah, dengan Markdown kita bisa fokus pada konten cerita kita tanpa harus khawatir tentang formatnya.
+
+Bukan hanya itu, Markdown juga memungkinkan kita untuk menambahkan elemen-elemen seperti gambar, tautan, dan bahkan kode ke dalam cerita kita dengan cara yang sangat sederhana. Ini memberikan kita lebih banyak kebebasan dalam menyampaikan cerita kita dengan cara yang lebih kreatif.
+
+## Bagaimana cara menulisnya?
+
+Markdown adalah bahasa markup ringan yang memungkinkan kita untuk menulis teks dengan format yang mudah dibaca dan mudah diubah menjadi HTML. Dengan menggunakan Markdown, kita bisa menulis cerita kita dengan cara yang lebih sederhana dan lebih cepat, tanpa harus khawatir tentang format yang rumit.
+
+Jika tulisan kita memerlukan banyak keterangan atau penjelasan terperinci, kita bisa dengan mudah membuatnya menjadi _footnote_ dengan menggunakan Markdown. Kita hanya perlu menambahkan tanda kurung siku setelah kata atau frasa yang ingin kita beri keterangan, dan kemudian menuliskan keterangan tersebut di bagian bawah dokumen kita. Misalnya, jika kita ingin memberikan keterangan tentang kata "Markdown", kita bisa menuliskannya seperti ini:
+
+Markdown[^1] adalah bahasa markup ringan yang memungkinkan kita untuk menulis teks dengan format yang mudah dibaca dan mudah diubah menjadi HTML.
+
+[^1]: Markdown adalah bahasa markup ringan yang dirancang untuk membuat penulisan teks menjadi lebih mudah dan cepat, tanpa harus khawatir tentang format yang rumit.
+
+Jika pembaca ingin melihat keterangan tersebut, mereka hanya perlu mengklik tautan yang ada di kata "Markdown" dan mereka akan langsung diarahkan ke bagian bawah dokumen kita di mana keterangan tersebut berada. Ini membuatnya sangat mudah bagi pembaca untuk memahami konteks dari kata atau frasa yang kita gunakan dalam cerita kita.
+
+Paragraf berisi _footnote_ di atas saya tulis seperti ini:
+
+```markdown
+Markdown[^1] adalah bahasa markup ringan yang memungkinkan kita untuk menulis teks dengan format 
+yang mudah dibaca dan mudah diubah menjadi HTML.
+
+[^1]: Markdown adalah bahasa markup ringan yang dirancang untuk membuat penulisan teks menjadi lebih mudah dan cepat, tanpa harus khawatir tentang format yang rumit.
+```
+
+Kita bisa membuat banyak _footnote_ dalam cerita kita tanpa harus khawatir tentang penyusunan atau penempatannya, karena Markdown akan secara otomatis mengatur semuanya untuk kita. Semua _footnote_ yang kita buat di dalam satu dokumen akan ditempatkan secara rapi di bagian bawah dokumen tersebut, sehingga pembaca bisa dengan mudah menemukan dan membaca keterangan yang kita berikan.
+
+Penomoran "1, 2, 3, ..." pada _footnote_ akan secara otomatis dihasilkan oleh Markdown, jadi kita tidak perlu khawatir tentang penomoran atau urutan dari _footnote_ yang kita buat. Kita hanya perlu fokus pada konten dari cerita kita, dan Markdown akan mengurus sisanya untuk kita.
+
+Untuk menulis _footnote_ yang mudah kita ingat, kita bahkan bisa menggunakan "nama" untuk setiap _footnote_ yang kita buat. Misalnya, contoh di atas bisa kita tulis dengan cara seperti ini:
+
+```markdown
+Markdown[^markdown] adalah bahasa markup ringan yang memungkinkan kita untuk menulis teks dengan format yang mudah dibaca dan mudah diubah menjadi HTML.
+
+[^markdown]: Markdown adalah bahasa markup ringan yang dirancang untuk membuat penulisan teks menjadi lebih mudah dan cepat, tanpa harus khawatir tentang format yang rumit.
+```
+
+
+### Keuntungan Menggunakan Markdown
+
+1. **Mudah Dibaca**: Markdown dirancang untuk menjadi mudah dibaca, bahkan dalam bentuk mentahnya. Ini membuatnya ideal untuk menulis cerita, karena kita bisa fokus pada konten tanpa terganggu oleh format yang rumit.
+
+2. **Fleksibel**: Dengan Markdown, kita bisa menambahkan berbagai elemen seperti gambar, tautan, dan kode dengan cara yang sangat sederhana. Ini memberikan kita lebih banyak kebebasan dalam menyampaikan cerita kita.
+
+3. **Kompatibel**: Markdown dapat dengan mudah diubah menjadi HTML, yang berarti kita bisa menggunakan cerita kita di berbagai platform tanpa harus khawatir tentang format yang berbeda.
+
+
+Jika hanya ingin membuat _teks kita menjadi italic_, kita bisa menggunakan tanda bintang (atau _underscore_) seperti ini: `*teks miring*`. Untuk membuat teks menjadi **tebal**, kita bisa menggunakan dua tanda bintang seperti ini: `**teks tebal**`. Dan untuk membuat daftar, kita bisa menggunakan tanda minus seperti ini:
+
+- Item pertama
+- Item kedua
+
+Di dalam dokumen kita, teks di atas saya tulis seperti ini:
+
+```markdown
+Jika hanya ingin membuat _teks kita menjadi italic_, kita bisa menggunakan tanda bintang (atau 
+_underscore_) seperti ini: `*teks miring*`. Untuk membuat teks menjadi **tebal**, kita bisa 
+menggunakan dua tanda bintang seperti ini: `**teks tebal**`. Dan untuk membuat daftar, kita bisa 
+menggunakan tanda minus seperti 
+ini:
+
+- Item pertama
+- Item kedua
+```
+
+Untuk menyelipkan kode program, misalnya dalam contoh ini kita ingin menyelipkan kode `HTML`:
+
+```html
+<div>
+  <h1>Judul</h1>
+  <p>Paragraf</p>
+</div>
+```
+
+Kita hanya perlu menambahkan tiga tanda backticks sebelum dan sesudah kode kita, dan menuliskan jenis bahasa pemrograman setelah tanda backticks pertama. Dalam contoh ini, kita menuliskan `html` setelah tiga tanda backticks pertama untuk menunjukkan bahwa kode yang kita selipkan adalah kode HTML.
+
+Demikian juga seandainya kita ingin menyelipkan kode `C`, kita hanya perlu menuliskan blok program di antara ` ```c` dan ` ``` ` seperti ini:
+
+\`\`\`c
+```c
+#include <stdio.h>
+int main() {
+    printf("Hello, World!");
+    return 0;
+}
+```
+\`\`\`
+
+Hampir semua bahasa pemrograman yang ada saat ini didukung oleh Markdown, jadi kita bisa dengan mudah menyelipkan kode program dalam cerita kita tanpa harus khawatir tentang format yang rumit.
+
+
+### Bagaimana cara menampilkannya?
+
+Setelah kita menulis cerita kita dengan menggunakan Markdown, kita bisa dengan mudah menampilkannya di berbagai platform. Tetapi kita masih tetap memerlukan `Markdown Processor` untuk mengubah file Markdown kita menjadi HTML yang bisa ditampilkan di web. Ada banyak `Markdown Processor` yang tersedia, baik yang berbasis web maupun yang bisa kita jalankan di komputer kita sendiri.
+
+Jika kita mengedit menggunakan `VSCode`, maka kita bisa menggunakan kombinasi tombol `Ctrl + Shift + V` untuk melihat pratinjau dari file Markdown kita. Ini memungkinkan kita untuk melihat bagaimana cerita kita akan terlihat ketika ditampilkan di web, tanpa harus membuka browser atau menggunakan alat lain.
+
+Jika kita ingin menampilkan cerita kita di web, kita bisa menggunakan layanan seperti `GitHub Pages`, `Netlify`, atau `Vercel` untuk menghosting file Markdown kita. Kita hanya perlu mengunggah file Markdown kita ke layanan tersebut, dan mereka akan secara otomatis mengubahnya menjadi HTML yang bisa ditampilkan di web.
+
+Contoh berikut adalah [menggunakan Lume](/documentations/lume/).
+

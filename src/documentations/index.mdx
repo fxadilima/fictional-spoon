@@ -1,0 +1,43 @@
+---
+layout: layouts/default.vto
+title: Null Pointer
+---
+
+This is a test for _markdown_ in MDX[^mdx] file...
+
+[^mdx]: MDX stands for Markdown + JSX. It allows you to write JSX in your Markdown files.
+
+The **title** of this document is: __{title}__
+
+And this is a code block:
+
+```ts
+import lume from "lume/mod.ts";
+import mdx from "lume/plugins/mdx.ts";
+import rehypeHighlight from "https://esm.sh/rehype-highlight@6";
+
+const site = lume();
+site.use(mdx({
+    rehypePlugins: [rehypeHighlight]
+}));
+
+site.copy("assets");
+export default site;
+```
+
+And this is a link to [Wuxia story](https://cersil.netlify.app), and this one will take you [back home](/).
+
+{/*
+
+This is a comment in MDX file. It will not be rendered in the output HTML.
+It can be used to add notes or explanations in the source code.
+
+For example, you can write simple tips to remind yourself about how to 
+toggle word wrap in VSCode: "Alt + Z" (Windows) or "Option + Z" (Mac).
+Since the extension tend to use the whole screen width, it's better to turn on word wrap when
+using it to write MDX, so we can reuse the resulting file in the future without worrying about
+the line breaks.
+
+*/}
+
+

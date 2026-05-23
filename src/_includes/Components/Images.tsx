@@ -2,7 +2,7 @@
 function Image(srcImg: string, altImg: string) {
     return (
         <>
-            <img className="w3-image" src={{srcImg}} alt={{altImg}} />
+            <img className="w3-image" srcImg={{srcImg}} altImg={{altImg}} />
         </>
     );
 }

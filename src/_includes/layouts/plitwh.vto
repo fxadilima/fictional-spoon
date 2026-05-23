@@ -8,27 +8,13 @@
     </head>
     <body>
         <div class="w3-sidebar w3-bar-block w3-card-4" style="width:25%">
-            <a href="/plitwh/prolog" class="w3-bar-item w3-btn w3-hover-black">Prolog</a>
-            <a href="/plitwh/part1" class="w3-bar-item w3-btn w3-hover-black">Part 1</a>
-            <a href="/plitwh/part2" class="w3-bar-item w3-btn w3-hover-black">Part 2</a>
+            <a href="/alessandra/prolog" class="w3-bar-item w3-btn w3-hover-black">Prolog</a>
+            <a href="/alessandra/part1" class="w3-bar-item w3-btn w3-hover-black">Part 1</a>
+            <a href="/alessandra/part2" class="w3-bar-item w3-btn w3-hover-black">Part 2</a>
         </div>
         <main class="w3-main w3-container" style="margin-left:25%">
             <div class="w3-panel w3-content w3-row-padding">
                 {{ content }}
-                <hr />
-                {{ if footnotes.length }}
-                <ol>
-                {{ for note of footnotes }}
-                    <li id={{ note.id }}>
-                    {{ note.content }}
-                        {{ for refId of note.refIds }}
-                            <a href="#{{ refId }}" class="footnote-backref">↩</a>
-                        {{ /for }}
-                    </li>
-                    {{ /for }}
-                </ol>
-                {{ /if }}
-
             </div>
         </main>
     </body>

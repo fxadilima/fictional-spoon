@@ -1,0 +1,101 @@
+---
+layout: layouts/default.vto
+title: Null Pointer | Astro
+---
+
+# Menggunakan Astro
+
+Bagian ini berisi tutorial tentang menulis novel menggunakan `Markdown` atau `MDX`, 
+dan membuatnya menjadi `static site` dengan menggunakan `Astro`.
+
+Untuk mengikuti tutorial ini, pastikan kamu sudah menginstal `Node.js` di komputermu.
+
+Buka sebuah terminal di dalam direktori kosong, atau saran saya buat sebuah [Repository GitHub](https://github.com),
+lalu clone repository ini ke komputer kamu dengan perintah berikut:
+
+```bash
+git clone https://github.com/your-username/your-repo.git
+
+# Gantikan "your-username" dan "your-repo" dengan username dan nama repository kamu
+# Misalnya, dalam contoh ini saya menggunakan nama repo "didactic-octo-dollop",
+# jadi perintahnya akan menjadi:
+git clone https://github.com/fxadilima/didactic-octo-dollop.git
+```
+
+Setelah itu, masuk ke direktori hasil clone dengan perintah berikut:
+
+```bash
+cd didactic-octo-dollop
+# Gantikan "didactic-octo-dollop" dengan nama repository kamu
+# lalu install Astro dengan perintah berikut:
+npm create astro@latest
+```
+
+Ikuti instruksi yang muncul di terminal untuk menyelesaikan instalasi Astro.
+
+Setelah selesai, kamu bisa menjalankan perintah berikut untuk memulai server pengembangan:
+
+```bash
+npm run dev
+```
+
+Sekarang kamu bisa membuka browser dan mengunjungi `http://localhost:4321` untuk melihat hasilnya.
+
+<div class="w3-card-4 w3-round">
+    <header class="w3-container w3-blue">
+        <h3>Catatan</h3>
+    </header>
+    <div class="w3-container">
+
+Jika kamu mengalami masalah saat menjalankan perintah `npm create astro@latest`, 
+biarkan proses tersebut selesai terlebih dahulu, lalu masuk ke dalam direktori yang 
+sudah berhasil dibuat, dan jalankan perintah `npm install` untuk menginstall semua
+dependency yang diperlukan, baru kemudian jalankan perintah `npm run dev` 
+untuk memulai server pengembangan, seperti perintah di bawah ini.
+
+    </div>
+</div>
+
+```bash
+npm install
+npm run dev
+```
+
+Seharusnya sekarang semuanya jalan dengan baik.
+
+Jika di dalam instalasi Astro kamu memilih _template_ Blog, maka sekarang kamu bisa langsung menulis narasi _post_ yang barangkali berguna selama penulisan novel di dalam direktori bernama `content/blog`, di situ ada beberapa contoh halaman yang ditulis menggunakan beberapa format, termasuk `Markdown` dan `MDX`, yang bisa digunakan sebagai contoh.
+
+## Menggunakan CSS Sendiri
+
+Meskipun Astro sudah menyediakan beberapa _template_ yang bisa langsung digunakan, kamu juga bisa membuat _template_ sendiri dengan menggunakan CSS yang kamu buat sendiri, atau menggunakan framework CSS seperti [Tailwind CSS](https://tailwindcss.com/), [Bootstrap](https://getbootstrap.com/), atau [Bulma](https://bulma.io/). Dalam contoh berikut, saya akan menggunakan CSS yang paling sering saya gunakan karena kesederhanaannya, yaitu [W3.CSS](https://www.w3schools.com/w3css/). Tepatnya saya akan menggunakan versi 5.0.1, yang bisa kamu tambahkan ke dalam file `src/layouts/default.astro` dengan menambahkan tag `<link>` berikut di dalam tag `<head>`:
+
+```html
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+```
+
+Setelah itu, kamu bisa menggunakan kelas-kelas yang disediakan oleh W3.CSS untuk membuat tampilan yang menarik. Misalnya, kamu bisa menambahkan kelas `w3-card-4` dan `w3-round` untuk membuat sebuah kartu dengan sudut yang melengkung, seperti contoh berikut:
+
+```html
+<div class="w3-card-4 w3-round">
+    <header class="w3-container w3-blue">
+        <h3>Judul Kartu</h3>
+    </header>
+    <div class="w3-container">
+        <p>Isi kartu di sini.</p>
+    </div>
+</div>
+```
+
+Jika kita menulis menggunakan format `MDX`, maka penggunaan kelas-kelas CSS, terutama sekali `w3-container`, akan terasa sangat alamiah, karena bisa disisipkan di sembarang tempat di dalam dokumen kita, seperti yang saya lakukan di dalam dokumen ini sendiri.
+
+<div class="w3-card-4 w3-round">
+    <header class="w3-container w3-blue">
+        <h3>Judul Kartu</h3>
+    </header>
+    <div class="w3-container">
+        <p>Isi kartu di sini.</p>
+    </div>
+</div>
+
+Ikuti [pembahasan saya mengenai penggunaan W3.CSS](/documentations/w3css/) untuk informasi lebih lanjut tentang cara penerapannya dalam proyek Astro kamu.
+
